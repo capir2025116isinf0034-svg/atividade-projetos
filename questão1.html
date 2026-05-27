@@ -7,14 +7,19 @@
     <title>Document</title>
 </head>
     <header>
-        <h1>site de flores</h1>
+        <h1>Site fantasy books</h1>
     </header>
 <body>
     <main>
-        
-    <button onclick="mostrarMensagem()">Clique no botao!</button>
-    <script src="./script.js"></script>
+    
+    <button onclick="mensagem()">Clique aqui</button>
 
+    <script>
+        function mensagem() {
+            alert("Bem-vindo ao Reino das Fadas!");
+        }
+    </script>
+        
     <p id="saida"></p>
     <script>
         var result = "Meu texto do paragrafo!";
@@ -23,7 +28,7 @@
 
    <input type="number" id="entrada" placeholder="Digite sua idade">
    <button onclick="verificar()">Confirme sua idade</button>
-   <p>Essa e sua idade!</p>
+   <p>Essa é sua idade!</p>
    <p id="psaida"></p>
    <script>
      function verificar(){
