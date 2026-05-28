@@ -2,41 +2,19 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilo.css">
-    <title>Document</title>
+    <title>Questão 2</title>
 </head>
-    <header>
-        <h1>Site fantasy books</h1>
-    </header>
 <body>
-    <main>
-    
-    <button onclick="mensagem()">Clique aqui</button>
+
+    <p id="texto">O Pequeno Príncipe</p>
+
+    <button onclick="alterarTexto()">frase do livro</button>
 
     <script>
-        function mensagem() {
-            alert("Bem-vindo ao Reino das Fadas!");
+        function alterarTexto() {
+            document.getElementById("texto").innerText = "Só podemos ver bem com o coração. O essencial é invisível aos olhos.";
         }
     </script>
-        
-    <p id="saida"></p>
-    <script>
-        var result = "Meu texto do paragrafo!";
-        document.getElementById("saida").innerText = result;
-    </script>
 
-   <input type="number" id="entrada" placeholder="Digite sua idade">
-   <button onclick="verificar()">Confirme sua idade</button>
-   <p>Essa é sua idade!</p>
-   <p id="psaida"></p>
-   <script>
-     function verificar(){
-        let idade = document.getElementById("entrada").value;
-        document.getElementById("psaida").innerText = idade;
-     }
-   </script> 
-
-    </main>
 </body>
 </html>
